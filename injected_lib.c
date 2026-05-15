@@ -21,13 +21,8 @@ unsigned long get_lib_base(const char* name) {
     return addr;
 }
 
-void print_to_console(const char* message) {
-    fprintf(stderr, "[Injected] %s\n", message);
-    fflush(stderr);
-}
-
 __attribute__((constructor))
 void init_lib() {
-    print_to_console("Diesel executor library loaded successfully!");
-    print_to_console("Library base: 0x%lx", get_lib_base("sober_test_inject.so"));
+    fprintf(stderr, "[Injected] Diesel executor library loaded successfully!\n");
+    fflush(stderr);
 }
