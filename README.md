@@ -10,7 +10,7 @@
 
 ## No screenshots for now
 
-https://github.com/gitwab/Wineblox-executor/blob/main/logo.png
+![screenshot](https://github.com/gitwab/Wineblox-executor/blob/main/logo.png)
 
 
 ---
